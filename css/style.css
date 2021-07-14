@@ -19,7 +19,7 @@ body {
 /* -----------------------Common Styles Or utilities--------------- */
 
 main {
-    background-color: #2D25A0;
+    /* background-color: #2D25A0; */
     width: 85%;
     height: auto;
     margin: 0 auto;
@@ -32,8 +32,11 @@ main {
 
 /* -----------------------Nav styles--------------- */
 
+.header-link {
+    margin-bottom: 10px;
+}
+
 header {
-    
     padding: 5px;
     display: flex;
     align-items: center;
@@ -75,6 +78,10 @@ header ul {
 
 /* -----------------------Top Banner Styles--------------- */
 
+.top-banner {
+    margin-bottom: 25px;
+}
+
 .banner {
     width: 1000px;
     height: auto;
@@ -82,6 +89,10 @@ header ul {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 102px;
     margin: 0 auto;
+}
+
+.banner:hover .banner-img img {
+    transform: scale(1.1);
 }
 
 .banner-heading {
@@ -106,6 +117,7 @@ header ul {
     padding: 10px 15px;
     border-radius: 5px;
     margin-top: 25px;
+    
 }
 
 .intro-icon {
@@ -117,8 +129,46 @@ header ul {
 .banner-img {
     width: 550px;
     height: auto;
+    transform: scale(.99);
+    transition: transform 0.3s;
 }
 
 .banner-img img {
     width: 100%;
+}
+
+/* -----------------------Players section Styles Here-------------- */
+
+.players {
+    background-color: #FFFFFF;
+}
+
+.blogs {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: #562EFF;
+    font-size: 16px;
 }
