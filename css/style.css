@@ -102,6 +102,7 @@ header ul {
 .banner-heading {
     width: 478px;
     height: 210px;
+    
 }
 
 .intro-text {
@@ -191,7 +192,7 @@ header ul {
 }
 
 .blog-author {
-    color: #562EFF;
+    color: #000000;
     font-size: 16px;
     font-weight: 400;
     /* text-align: justify; */
@@ -223,4 +224,109 @@ header ul {
     font-size: 18px;
     font-weight: 400;
     color: #000000;
+}
+
+/* ------------------For mobile view----------------- */
+
+@media screen and (max-width: 720px) {
+    header {
+    padding: 2px;
+    margin-left: 2%;
+    margin-right: 3%;
+    }
+
+    header ul a {
+    padding: 8px;
+    }
+
+    .top-banner {
+        margin-bottom: 46px;
+    }
+
+    .banner {
+        width: 250px;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 35px;
+    }
+
+    .banner-img {
+        width: 450px;
+        height: auto;
+        transform: scale(.99);
+        transition: transform 0.3s;
+
+    }
+
+    .intro-text {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .blogs {
+        margin-top: 25px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 65px;
+    }
+
+    .blog-author {
+        width: 300px;
+        margin-left: 12px;
+    }
+}
+
+/* For tablet screen */
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 5px;
+        margin-left: 4%;
+        margin-right: 5%;
+        }
+    
+        header ul a {
+        padding: 12px;
+        }
+    
+        .top-banner {
+            margin-bottom: 46px;
+        }
+    
+        .banner {
+            width: 900px;
+            height: auto;
+           
+            grid-row-gap: 80px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+    
+        .banner-img {
+            width: 800px;
+           
+    
+        }
+        
+        .banner-img img {
+            width: 40%;
+        }
+        
+        .button {
+            
+            margin-top: 5px;
+            
+        }
+
+        .intro-text {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .blogs {
+            margin-top: 25px;
+            grid-template-columns: repeat(1, 1fr);
+            margin-left: 65px;
+        }
+    
+        .blog-author {
+            width: 300px;
+            margin-left: 12px;
+        }
 }
