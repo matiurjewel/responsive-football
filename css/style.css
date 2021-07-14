@@ -20,20 +20,25 @@ body {
 
 main {
     background-color: #2D25A0;
-    width: 90%;
+    width: 85%;
     height: auto;
     margin: 0 auto;
 
 }
 
+.container {
+    background-color: #2D25A0;
+}
+
 /* -----------------------Nav styles--------------- */
 
 header {
+    
     padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 8%;
+    margin-left: 9%;
     margin-right: 7%;
 }
 
@@ -70,12 +75,6 @@ header ul {
 
 /* -----------------------Top Banner Styles--------------- */
 
-/* .container {
-    width: 1000px;
-    height: auto;
-    
-} */
-
 .banner {
     width: 1000px;
     height: auto;
@@ -83,17 +82,15 @@ header ul {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 102px;
     margin: 0 auto;
-    
 }
 
-
 .banner-heading {
-    width: 465px;
+    width: 478px;
     height: 210px;
 }
 
 .intro-text {
-    font-size: 52px;
+    font-size: 53px;
     font-weight: bold;
     color: #FFFFFF;
     padding: 50px 35px 15px 5px;
@@ -112,7 +109,6 @@ header ul {
 }
 
 .intro-icon {
-    /* display: block; */
     margin-left: 5px;
 }
 
